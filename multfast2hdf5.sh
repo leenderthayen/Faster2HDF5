@@ -49,8 +49,8 @@ shift $((OPTIND-1))
 for f in $@
 do
   echo "File $f"
-  echo "Label1: $LABEL1 LABEL2: $LABEL2"
-  fast2hdf5 $f $OUTPUT_FILE $LABEL1 $LABEL2
+  echo "Label1: $LABEL1 LABEL2: $LABEL2 LABEL3: $LABEL3 LABEL4: $LABEL4"
+  fast2hdf5 $f $OUTPUT_FILE $LABEL1 $LABEL2 $LABEL3 $LABEL4
   echo "Conversion of $f completed"
 done
 
