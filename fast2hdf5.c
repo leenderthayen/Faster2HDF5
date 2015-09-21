@@ -18,7 +18,7 @@
 #define NFA_EVT 5 /*number of variables for ADC type event*/
 #define NFA_CNT 4 /*number of variables for A_COUNT type event*/
 #define BUFSIZE 10000
-#define NROFDETECTORS 3
+#define NROFDETECTORS 4
 
 //-------------------------------------------------------//
 

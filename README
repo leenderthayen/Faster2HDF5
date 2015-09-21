@@ -14,4 +14,4 @@ Uses the fasterac library, written by LPC Caen, to extract both ADC and Counter 
 
 * Compilation options:
 
-h5cc -o fast2hdf5 -lfasterac fast2hdf5.c
+h5cc -o fast2hdf5 -lfasterac -std=c11 fast2hdf5.c
