@@ -267,7 +267,6 @@ int main (int argc, char** argv) {
     for (int i = 0; i < NROFDETECTORS; ++i) {
       if (labels[i] != 0) {
         if (indices[2*i] > 0 && indices[2*i] == BUFSIZE) {
-           printf("Cycle %d\n", j);
            status = H5TBappend_records(groups[i], "ADC", BUFSIZE, dst_size_evt, dst_offset_evt, dst_sizes_evt,
                                        &buf_evt[i][0]);
            indices[2*i] = 0;
@@ -336,5 +335,6 @@ int main (int argc, char** argv) {
     }
   }
   H5Fclose(file);
+  printf("Conversion success! Total # of events: %d", (j+1));
   return EXIT_SUCCESS;
 }

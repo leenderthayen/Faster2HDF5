@@ -16,6 +16,8 @@ echo "-h: Show help"
 echo "-l: Labels for the channels on the used inputs. Usage: l1,l2,l3,l4"
 echo "-o: Specify output file"
 echo "-p: Specify further options"
+echo "Example: multfast2hdf5.sh -o output.h5 -l 1,3,4 input_00*"
+echo "Support for options file (.setup) not yet implemented"
 }
 
 while getopts ":hl:o:p:" opt; do
